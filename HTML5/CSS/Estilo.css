@@ -1,0 +1,34 @@
+body
+{
+    max-width: 1024px;
+}
+header
+{
+    background:  yellowgreen;
+    color: darkgoldenrod;
+    text-align: center;
+
+}
+header nav ul li
+{
+    background: orange;
+    color: white;
+    border-radius: 5px;
+    width: 90px;
+    display: inline-block;
+    padding: 10px 0 10px 0;
+    margin: 10px;
+}
+header nav ul li:hover
+{
+background-color: black;
+}
+footer
+{
+    background: green;
+    color: white;
+}
+.inicio
+{
+    color: red;
+}
