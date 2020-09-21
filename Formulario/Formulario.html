@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<HTMl lang="en">
+   <head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Formulario</title>
+   </head>
+   <body>
+       <form action="Formulario.html">
+           <h3>Text</h3>
+           <label for="nombre">Nombre</label>
+           <input type="text" name="nombre" placeholder="escribe tu nombre..." size="50"id="nombre" maxlength="15" autofocus> 
+           <h3>radio</h3>
+           <input type="radio" name="genero" value="hombre">Hombre
+           <input type="radio" name="genero" value="mujer"checked>Mujer
+           <input type="radio" name="genero" value="otro">Otro
+           <h3>select</h3>
+               <select name="fresa">
+                   <option value="fresa">Fresa</option>
+                   <option value="mango">Mango</option>
+                   <option value="naranja">Naranja</option>
+               </select>
+               <h3>textarea</h3>
+               <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escribe aqui viejon@"></textarea>
+               <h3>datalist</h3>
+               <label>buscador:</label>
+               <input list="buscador">
+               <datalist id="buscador">
+                <option value="Chrome">Chrome</option>
+                <option value="Yahoo">Yahoo</option>
+                <option value="Opera">Opera</option>
+               </datalist>
+               <input type="submit" value="Enviar">
+               <input type="image" src="" alt="">
+               <button>Enviar</button>
+       </form>
+       <!--Value es  lo que se manda por decir a la BD internamente en codigo-->
+
+   </body>
+
+
+
+</HTMl>
