@@ -19,10 +19,14 @@
            </fieldset>
            <h3>select</h3>
            <label for="frutas">Frutas</label>
-               <select name="fresa">
+               <select name="frutas" id="frutas">
+                   <optgroup label="favoritas">
                    <option value="fresa">Fresa</option>
                    <option value="mango">Mango</option>
+                   </optgroup>
+                   <optgroup label="otras">
                    <option value="naranja">Naranja</option>
+                   </optgroup>
                </select>
                <h3>textarea</h3>
                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="escribe aqui viejon@"></textarea>
@@ -76,7 +80,8 @@
                <input type="reset" value="limpiar">
        </form>
        <!--Value es  lo que se manda por decir a la BD internamente en codigo-->
-
+        <!--Value es el valor que se mandara al campo por asi decirlo al servidor y name podriamos decir
+         que es el nombre de ese campo  -->
    </body>
 
 
