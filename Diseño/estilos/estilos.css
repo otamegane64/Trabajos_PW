@@ -1,0 +1,62 @@
+@font-face
+{
+font-family: 'oswald';
+src: url(estilos/Anton-Regular);
+}
+body 
+{
+    margin: 0 auto;
+    max-width: 1024px;
+    background: #324ca8;
+    font-family: 'oswald';
+}
+body header
+{
+    background: #4432a8;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+body header h1
+{
+    margin: 0 auto;
+    font-weight: 700;
+    text-shadow: 5px 5px black;
+    font-family: 'Open Sans Condensed', sans-serif;
+  
+}
+body header nav ul
+{
+    background: black;
+}
+body header nav ul li
+{
+    display: inline-block;
+    background: black;
+    color: white;
+    margin: 0 15px;
+    padding: 10px;
+}
+body header nav ul li:hover
+{
+    color: black;
+    background: white;
+}
+#seccion1 
+{
+  background: #ffffff;
+  border: 3px solid black;
+}
+footer
+{
+    background: green;
+    height: 50px;
+}
+#seccion1 article
+{
+    display: inline-block;
+    border: 2px solid red;
+    width: 48%;
+    vertical-align: top;
+    
+}
