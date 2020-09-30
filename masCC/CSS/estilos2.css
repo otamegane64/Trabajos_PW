@@ -1,0 +1,65 @@
+/*herencia
+se utiliza el valor de inherit*/
+p
+{
+    color: green;
+    font-size: 30px;
+}
+a
+{
+    color: inherit; /*se le dice que seleccione el color del elemento padre*/
+    
+}
+/*Especificidad -> cascada*/
+
+/*
+Etiquietas -> 1
+Clases -> 10
+ID ->100
+Estilos en linea ->100
+Important ->gana a todos
+*/
+.parrafo
+{
+    color: yellowgreen;
+    font-size: 30px;
+}
+#parrafo
+{
+    color: purple;
+    font-size: 30px;
+}
+p
+{
+    color: red;
+    font-size: 30px;
+}
+/*box model*/
+h1
+{
+    background: lightblue;
+    width: 100px;
+}
+div
+{
+    background:  lightcoral;
+    height: 100px; width: 100px;
+    border: 1px solid black;
+}
+a
+{
+    background: lightgreen;
+    height: 100px;
+}
+span
+{
+    background: red;
+    height: 1000px;
+}
+.caja1 
+{
+background: lightgreen;
+border: 3px solid black;
+padding: 10px;
+margin: 20px;
+}
