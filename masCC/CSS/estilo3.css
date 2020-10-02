@@ -40,7 +40,7 @@ margin: 20px;
     height: 300px;
     border: 3px solid black;
     position: relative;
-    margin-top: 300px;
+    
 }
 /*Seleccionar los elementos que tienen ese atributo y empiecen por ese valor*/
 [class^="caja"]
@@ -85,4 +85,53 @@ margin: 20px;
     right: 0;
     left: 0;
     margin: auto;
+}
+/*Fixed*/
+.menu
+{
+    background: blue;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+   /* position: fixed;
+    width: 100%;
+    top: 0;*/
+    position: sticky;
+    top: 0;
+}
+body
+{
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.titulo 
+{
+    margin: 0;
+}
+/*Sticky*/
+.banner
+{
+    height: 100px;
+    background: darkgoldenrod;
+    font-size: 30px;
+    text-align: center;
+    line-height: 100px;
+}
+/*Display
+inline
+block
+inline-block
+none*/
+.linea
+{
+    background: lightcoral;
+    display: inline-block; /*Se comporta como un bloque a pesar de ser en linea*/
+    height: 100px;
+    margin-bottom: 30px;
+}
+.bloque
+{
+    background: yellow;
+    
 }
