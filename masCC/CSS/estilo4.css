@@ -22,3 +22,138 @@ color: red;
     color: red;
     background: yellow;
 }
+
+/*::before y after
+La propiedad de content es obligatoria
+por defecto son elementos en linea y se pueden visualizar
+como hijos del elementos
+*/
+.dinero::before
+{
+  content: '$';
+  color: red;
+}
+.dinero::after
+{
+  content: '.00';
+  color: red;
+}
+.ejemplo::before, .ejemplo::after
+{
+  background: black;
+  width: 10px;
+  height: 10px;
+  content: '';
+  display: inline-block;
+}
+/*Pseudoclases
+Dinamicas
+link- enlace no visitado
+visited- link visitado
+active - al momento del cick
+*focus
+HOVER
+*/
+.enlace:link
+{
+  color: blueviolet;
+}
+.enlace:visited
+{
+  color: aqua;
+}
+.enlace:active
+{
+  transform: scale(9);
+}
+.enlace
+{
+  padding: 10px;
+  display: inline-block;
+  background: blue;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.enlace:hover
+{
+  background: black;
+}
+input:focus
+{
+  background: yellow;
+  font-size: 15px;
+}
+/*Estado
+:enabled
+:disabled
+:required
+:opcional
+:valid
+;invalid
+:in-range
+:out of range
+*/
+.input, .label
+{
+  display: block;
+}
+.input:enabled
+{
+  background: green;
+}
+.input:disabled
+{
+  border: 1px solid black;
+}
+.input:required
+{
+  background: red;
+}
+.checkbox , .checkbox + label
+{
+  display: in;
+}
+.input:checked + label
+{
+  font-size: 30px;
+}
+.input:in-range
+{
+  background: lightcoral;
+}
+.input:out-of-range
+{
+  background: red;
+}
+/*CHILD
+
+first-child= selecciona el primer hijo- no importa el elemento
+las-child   =selecciona el ultimo hijo
+:nth-child(n)
+:nth-last-child()
+:only-child
+valores
+odd-impares
+even-pares
+
+types
+:first-of-type
+:last-of-type
+*/
+.parrafo:first-child
+{
+background: red;
+}
+.parrafo:first-child
+{
+background:blue;
+}
+.parrafo:nth-child(odd)
+{
+  background: violet;
+}
+.parrafo:nth-child(even)
+{
+  background: yellowgreen;
+}
