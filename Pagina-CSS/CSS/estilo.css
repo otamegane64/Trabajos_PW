@@ -1,0 +1,57 @@
+body
+{
+    margin: 0 auto;
+    font-size: 16px; /*1em*/
+    max-width: 1024px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header
+{
+    background: #cfe1eb;
+    position: relative;
+}
+header nav
+{
+    background: #0070c5;
+    width: 99%;
+    border-radius: 5px;
+}
+header nav ul
+{
+    display: inline-block;
+}
+header nav ul li
+{
+    display: inline-block;
+    color: #ffffff;
+    font-weight: 700;
+    margin-right: 20px;
+}
+header nav ul li:hover
+{
+    transform: scale(1,2);
+    cursor: pointer;
+}
+header nav form
+{
+    display: inline-block;
+    float: right;
+    margin: 15px 20px 0 0;
+}
+#logo
+{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.buscador
+{
+    border-radius: 5px;
+}
+.boton-buscar
+{
+    background: green;
+    color: #ffffff;
+    border: 1px solid green;
+    border-radius: 5px;
+}
