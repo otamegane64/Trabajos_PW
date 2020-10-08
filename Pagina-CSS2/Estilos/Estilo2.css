@@ -1,0 +1,53 @@
+/*
+Degradado
+Es la transicion entre un color y otro
+tipos lineales y radiales
+2 colores:  0% hasta arriba 100% hasta abajo
+bacjgroudn-image:
+Valores para lineal
+linear-gradient([direccion],color1,color2);
+direcciones: top, right, left, bottom, top right, top left
+Inicios de color: medir en px,em
+
+Valores para radial
+radial-gradient ([shape],color1,color2]);
+origines: at top, bottom, left, right
+*/
+.caja
+{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    background-image: linear-gradient(to bottom left,red ,blue, yellow,purple);
+    background-image: radial-gradient(ellipse 200px 100px at bottom, transparent 50%,blue 50%);
+}
+/*
+Box shadow
+h-offset v-offset blur spread color insert outset
+h-offset desplazamiento horizontal obligatorio
+v-||     desplazamiento vertical   igual
+blur opcional- desenfoque de la sombra
+spreed opcional- extension de la sombra
+color opcional- por defecto agarra el color de texto
+insert y outset opcional - por defecto es outset
+*/
+.caja2
+{
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    margin: 50px;
+    box-shadow: -10px -10px 5px 10px red, 10px 10px 50px 10px blue;
+}
+/*
+Text Shadow
+Text-shadow: h-offser, v-offser blur color
+sombras multiples
+*/
+.titulo
+{
+    font-size: 30px;
+    font-weight: 900;
+    text-shadow: 4px 4px 3px red, 4px 4px 10px blue;
+}
+
