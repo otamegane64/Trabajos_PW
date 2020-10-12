@@ -15,7 +15,7 @@ header h1
     color: white;
     font-size: 25px;
     text-shadow: 0 0 1px grey;
-    margin: 0%;
+    margin: 0 0 35px;
 }
 .redes
 {
@@ -33,11 +33,89 @@ header nav ul li
     display: inline-block;
     padding: 15px 10px 15px 10px;
 }
+aside
+{
+    width: 39%;
+}
+aside,.seccion1
+{
+    display: inline-block;
+    vertical-align: top;
+}
+.seccion1
+{
+    width: 60%;
+}
+.img-post
+{
+width: 28%;
+border: 6px solid silver;
+}
+.contenido-post
+{
+width: 68%;
+padding-left: 3px;
+}
+.autor-post
+{
+    box-shadow: 1px 1px 0 1px silver;
+    width: 90%;
+    display: block;
+    background: rgb(247, 243, 243);
+    font-size: 12px;
+    padding: 8px 5px;
+    border-radius: 8px;
+}
+.italica-autor
+{
+    font-style: italic;
+    color: silver;
+}
+
+#mas
+{
+    background: grey;
+    color: white;
+    border-radius: 8px;
+    padding: 10px, 5px;
+    border: none;
+    font-style: italic;
+}
+.imagen
+{
+ width: 90%;
+}
 .barra
 {
     
     color: white;
     font-weight: 600;
     background-image: linear-gradient(#ef6000 15%,#fed0b2 20% ,#ef6000 40%);
-
+    border-radius: 7px;
+    
+}
+.sectart1
+{
+    text-align: center;
+}
+.sectart2
+{
+    margin:0 25px;
+    padding: 20px 0;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+}
+.sectart2 h2
+{
+    color: gray;
+    margin: 0 0 10px;
+}
+.sectart2 p
+{
+  font-size: 14px;   
+}
+.img-post, .contenido-post
+{
+    display: inline-block;
+    vertical-align: top;
 }
