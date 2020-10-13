@@ -119,3 +119,72 @@ padding-left: 3px;
     display: inline-block;
     vertical-align: top;
 }
+.publicidad
+{
+    margin: 20px 0 0;
+}
+.publicidad-imagenes
+{
+    margin: 20px 0 10px;
+}
+.publicidad div
+{
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 12px;
+}
+.buscador span
+{
+    border-radius: 15px;
+    border: 1px solid silver;
+    padding: 5px ;
+}
+.buscador form
+{
+    text-align: center;
+    margin: 15px 0 10px;
+  
+}
+.buscador div
+{
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 12px;
+}
+.categorias div
+{
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 12px;
+}
+
+.categorias ul li
+{
+   text-align: left;
+    border-style: none none dashed none;
+    border-width: 2px;
+    padding: 10px 0 4px 0;
+}
+.categorias div
+{
+    text-align: center;
+}
+.publicidad, .buscador, .categorias
+{
+    border: 1px solid silver;
+    border-radius: 12px;
+}
+.form-buscador
+{
+    border-radius: 15px;
+    padding: 3px;
+    border: 1px solid silver;
+}
+.form-boton
+{
+    border-radius: 20px;
+    color: white;
+    background: silver;
+    border: 1px solid grey;
+    height: 25px;
+}
