@@ -39,12 +39,13 @@ aside
     text-align: center;
     position: relative;
 }
+
 .seccion2 article
 {
     display: inline-block;
     width: 30%;
     vertical-align: top;
-    margin: 0 10px;
+    margin: 30px 10px 0 0;
 }
 .seccion2 article h3
 {
@@ -108,7 +109,7 @@ aside div h3
 {
     font-size: 60px;
     font-weight: 300;
-    margin: 0 0 5px 0;
+    margin: 10px 0 5px 0;
 }
 aside div li
 {
