@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true}))
 //Bases de datos
 require('./config/connection');
 //Rutas
-app.use(require('./routes/personasroute'));
+app.use(require('./routers/librosroute'));
 //Levantar el servidor
 app.listen(app.get('port'), (error)=>{
     if(error){

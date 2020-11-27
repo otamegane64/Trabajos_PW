@@ -1,18 +1,49 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <h1>Libros</h1>
+   <b-button variant="primary" class="float-right mb-3" to="/agregar-libro">Agregar</b-button>
+   <Tabla :fields ="campos" :items="allLibros"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import Tabla from '../components/Tabla'
+import{mapActions,mapGetters} from 'vuex'
 export default {
   name: 'Home',
   components: {
-    HelloWorld
+    Tabla
+  },
+  data(){
+    return{
+      campos:[
+         {key: 'id', label:'ID'},
+      {key: 'titulo', label:'Titulo'},
+      {key: 'autor', label:'Autor'},
+      {
+        key: 'num_paginas', 
+        label:'Numero de paginas',
+        formatter: value =>{
+          return value || "Información no Agregada"
+        }},
+        {
+        key: 'anio', 
+        label:'Año',
+        formatter: value =>{
+          return value || "Información no Agregada"
+        }}
+      ]
+    }
+  },
+  methods:{
+    ...mapActions(['setLibros'])
+  },
+  created(){
+    this.setLibros();
+  },
+  computed:{
+    ...mapGetters(['allLibros'])
   }
 }
 </script>
